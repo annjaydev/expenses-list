@@ -1,0 +1,174 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap');
+
+html, body, div, span, 
+h1,  p, ol, ul, li,
+label, header {
+	margin: 0;
+	padding: 0;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Roboto Condensed', sans-serif;
+  font-size: 15px;
+  color:rgba(0, 0, 0, 0.7)
+}
+
+.container {
+  max-width: 700px;
+  padding: 20px 60px;
+  margin: 200px auto;
+
+  border-radius: 10px;
+  background-color: rgba(140, 222, 233, 0.5);
+  box-shadow: 4px 4px 8px 0px rgba(34, 60, 80, 0.2);
+}
+
+.app-header {
+  margin-bottom: 20px;
+}
+
+.app-title {
+  margin-bottom: 20px;
+
+  font-style: italic;
+  font-weight: 400;
+  text-align: center;
+}
+
+.control-panel {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+
+  margin-bottom: 20px;
+}
+
+.control-text,
+.control-sum {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  position: relative;
+}
+
+.control-text {
+  width: 50%;
+}
+
+.control-sum {
+  width: 30%;
+}
+
+.control-panel label {
+  margin-bottom: 5px;
+}
+
+.control-sum-field,
+.control-text-field {
+  padding-left: 5px;
+  height: 35px;
+
+  border-radius: 5px;
+  border: none;
+  box-shadow: 4px 4px 8px 0px rgba(34, 60, 80, 0.2);
+}
+
+.tooltip-text,
+.tooltip-sum {
+  position: absolute;
+  bottom: -20px;
+  left: 0;
+
+  font-size: 14px;
+  color: #e67070;
+  transition: opacity 0.5s;
+}
+
+.tooltip-text--hidden,
+.tooltip-sum--hidden {
+  opacity: 0;
+}
+
+.add-btn {
+  height: 35px;
+
+  border: none;
+  background-color: rgb(90, 196, 134);
+  border-radius: 5px;
+  box-shadow: 4px 4px 8px 0px rgba(34, 60, 80, 0.2);
+  color:rgba(0, 0, 0, 0.7)
+}
+
+.total-text {
+  text-align: right;
+  font-size: 19px;
+}
+
+.item-container {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 15px;
+
+  font-size: 19px;
+}
+
+.item-text,
+.input-text,
+.input-text,
+.input-sum {
+  height: 25px;
+}
+
+.item-text,
+.input-text {
+  width: 60%;
+}
+
+.item-sum,
+.input-sum {
+  width: 20%;
+}
+
+.input-text,
+.input-sum {
+  padding-left: 5px;
+
+  border-radius: 5px;
+  border: none;
+}
+
+.item-edit-btn,
+.item-del-btn,
+.item-confirm-btn {
+  width: 18px;
+  height: 18px;
+  margin-right: 15px;
+
+  border: none;
+  background-size: contain;
+  background-color: transparent;
+
+  cursor: pointer;
+}
+
+.item-edit-btn {
+  background-image: url('icons/draw.svg');
+}
+
+.item-confirm-btn {
+  background-image: url('icons/check.svg');
+}
+
+.item-del-btn {
+  background-image: url('icons/delete.svg');
+}
+
+
+
+

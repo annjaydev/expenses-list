@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Учет расходов</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <div class="container">
+    <header class="app-header">
+      <h1 class="app-title">Учет расходов</h1>
+      <div class="control-panel">
+        <div class="control-text">
+          <label for="text-field">Куда было потрачено</label>
+          <input 
+            class="control-text-field"
+            type="text" 
+            name="text-field" 
+            placeholder="Куда было потрачено"
+          >
+          <span class=" tooltip-text tooltip-text--hidden"></span>
+        </div>
+
+        <div class="control-sum">
+          <label for="sum-field">Сколько было потрачено</label>
+          <input 
+            class="control-sum-field"
+            type="text" 
+            name="sum-field" 
+            placeholder="Сколько было потрачено"
+          >
+          <span class="tooltip-sum tooltip-sum--hidden"></span>
+        </div>
+
+        <button class="add-btn">Добавить</button>
+      </div>
+
+      <p class="total-text">Итого: <span class="total"></span></p>
+    </header>
+
+    <div id="app-content">
+
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
